@@ -2,6 +2,8 @@
 
 package br.org.generation.helloWorld1.controller;
 
+import java.util.ArrayList;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,21 +15,26 @@ public class BSM {
 
 	@GetMapping
 	
-		public String bsm() {
+		public ArrayList<String> bsm() {
 		
+		ArrayList<String> listaBsm = new ArrayList<>();
 		
-		return "lista de BSM’s da Generation Brasil:\n"
-				+ "Introdução às Habilidades Comportamentais e Mentalidades\n"
-				+ "Mentalidade de Crescimento\n"
-				+ "Persistência\n"
-				+ "Responsabilidade Pessoal \n"
-				+ "Orientação ao Futuro\n"
-				+ "Comunicação\n"
-				+ "Orientação ao Detalhe\n"
-				+ "Proatividade\n"
-				+ "Trabalho em Equipe\n"
-				+ "Dar e Receber\n"
-				+ "Gestão do Tempo\n"
-				+ "Maximizar a Aprendizagem Online e o Trabalho Remoto";
+		listaBsm.add("------ Lista de BSM’s da Generation Brasil: ------");
+		listaBsm.add("Introdução às Habilidades Comportamentais e Mentalidades");
+		listaBsm.add("Mentalidade de Crescimento");
+		listaBsm.add("Persistência");
+		listaBsm.add("Responsabilidade Pessoal");
+		listaBsm.add("Orientação ao Futuro");
+		listaBsm.add("Comunicação");
+		listaBsm.add("Orientação ao Detalhe");
+		listaBsm.add("Orientação ao Detalhe");
+		listaBsm.add("Proatividade");
+		listaBsm.add("Trabalho em Equipe");
+		listaBsm.add("Dar e Receber");
+		listaBsm.add("Gestão do Tempo");
+		listaBsm.add("Maximizar a Aprendizagem Online e o Trabalho Remoto");
+				
+				
+		return listaBsm;
 	}
 }
